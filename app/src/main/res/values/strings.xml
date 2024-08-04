@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerviewTracker</string>
+    <string name="thumb_scroll">Thumb Scroll</string>
+    <string name="alphabet_scroll">Alphabet Scroll</string>
+</resources>

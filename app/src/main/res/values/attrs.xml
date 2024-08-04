@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSideBarView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomThumbSideBarView">
+        <attr name="thumbColor" format="color" />
+        <attr name="trackerColor" format="color" />
+    </declare-styleable>
+</resources>

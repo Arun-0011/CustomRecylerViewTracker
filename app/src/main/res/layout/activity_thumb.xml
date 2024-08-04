@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThumbActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="60dp"
+        android:fastScrollEnabled="true"
+        app:fastScrollVerticalThumbDrawable="@drawable/fast_scroll_thumb"
+        app:fastScrollVerticalTrackDrawable="@drawable/fast_scroll_track"
+        app:fastScrollHorizontalThumbDrawable="@drawable/fast_scroll_thumb"
+        app:fastScrollHorizontalTrackDrawable="@drawable/fast_scroll_track"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.app.recyclerviewtracker.customSideBarView.CustomThumbSideBarView
+        android:id="@+id/customThumbSideBarView"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="20dp"
+        app:thumbColor="@color/dark_blue"
+        app:trackerColor="@color/light_blue"
+        android:textSize="16sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
